@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <title>Landing Page</title>
+
+  <style>
+    .carousel-img {
+      max-height: 300px;
+      width: 100%;
+      object-fit: contain;
+    }
+    .carousel {
+      max-width: 600px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">SESI</a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Buscar">
+        <button class="btn btn-warning" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- TÍTULO -->
+<h1 class="text-center text-primary mt-4">
+  Bem vindo ao Sesi Mirandópolis
+</h1>
+
+<!-- CAROUSEL -->
+<div class="container mt-4">
+  <div id="carouselExample" class="carousel slide bg-white p-3 rounded shadow">
+
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://recreio.com.br/wp-content/uploads/legacy/2020/12/05/mar-1225801.jpg"
+             class="carousel-img" alt="">
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSj9jmfoqGwhJq9q-K29vBHOKHvlqp2FIEwgw&s"
+             class="carousel-img" alt="">
+      </div>
+
+      <div class="carousel-item">
+        <img src="https://picsum.photos/600/300"
+             class="carousel-img" alt="">
+      </div>
+    </div>
+
+    <button class="carousel-control-prev" type="button"
+      data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button"
+      data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</div>
+
+<div class="container mt-5">
+  <div class="row justify-content-center text-center">
+
+    <div class="col-md-4">
+      <div class="card bg-warning text-dark shadow">
+        <div class="card-body">
+          <h5 class="card-title">Educação</h5>
+          <p class="card-text">Ensino de qualidade para os alunos.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
