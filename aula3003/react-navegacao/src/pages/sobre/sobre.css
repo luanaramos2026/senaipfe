@@ -1,0 +1,44 @@
+/* CONTAINER DA PÁGINA SOBRE */
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: justify;
+}
+
+/* TÍTULO */
+.titulo {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e1e2f;
+    font-size: 28px;
+}
+
+/* TEXTO */
+.container p {
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+/* BOTÃO VOLTAR */
+.botao-voltar {
+    display: block;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: #00bcd4;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.botao-voltar:hover {
+    background-color: #0097a7;
+    transform: scale(1.05);
+}
