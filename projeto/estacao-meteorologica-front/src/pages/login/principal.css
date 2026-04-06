@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Fundo com efeito moderno */
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #022F2F, #014D4D, #0F766E);
+    padding: 20px;
+}
+
+/* Card estilo glass */
+.login-box {
+    display: flex;
+    width: 900px;
+    height: 540px;
+    border-radius: 20px;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.08);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* Imagem */
+.login-image {
+    flex: 1;
+    position: relative;
+}
+
+.login-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.3;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 40px;
+    left: 30px;
+    right: 30px;
+    color: #E0F7F7;
+}
+
+.image-overlay h1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.image-overlay p {
+    font-size: 0.9rem;
+    margin-top: 8px;
+    color: #99F6E4;
+}
+
+/* Formulário */
+.login-form-side {
+    flex: 1;
+    padding: 50px 40px;
+    display: flex;
+    align-items: center;
+}
+
+.form-wrapper {
+    width: 100%;
+}
+
+.form-wrapper h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #E0F7F7;
+    margin-bottom: 8px;
+}
+
+.form-wrapper p {
+    font-size: 0.9rem;
+    color: #A7F3D0;
+    margin-bottom: 30px;
+}
+
+/* Inputs estilo linha */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    font-size: 0.75rem;
+    color: #A7F3D0;
+    margin-bottom: 5px;
+}
+
+/* Input minimalista */
+.input-group input {
+    padding: 10px 5px;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    color: #E0F7F7;
+    font-size: 0.95rem;
+    transition: 0.3s;
+}
+
+/* Focus elegante */
+.input-group input:focus {
+    border-bottom: 2px solid #2DD4BF;
+    outline: none;
+}
+
+/* Placeholder */
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Botão moderno */
+.btn-login {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #2DD4BF, #0F766E);
+    color: #022F2F;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Hover suave */
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(45, 212, 191, 0.3);
+}
+
+/* Rodapé */
+.form-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8rem;
+    color: #A7F3D0;
+}
+
+.form-footer a {
+    color: #2DD4BF;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.form-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .login-box {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .login-image {
+        display: none;
+    }
+
+    .login-form-side {
+        padding: 30px 20px;
+    }
+}
