@@ -1,0 +1,90 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    margin: 20px 30px;
+
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+
+    color: #E0F7F7;
+}
+
+/* Título */
+header h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* Menu */
+nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+/* Links */
+nav a {
+    text-decoration: none;
+    color: #A7F3D0;
+    font-size: 0.9rem;
+    font-weight: 500;
+    position: relative;
+    transition: 0.3s;
+}
+
+/* Linha animada */
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: #2DD4BF;
+    transition: 0.3s;
+}
+
+/* Hover */
+nav a:hover {
+    color: #2DD4BF;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+/* Botão sair (diferenciado) */
+nav ul li:last-child a {
+    background: linear-gradient(135deg, #2DD4BF, #0F766E);
+    padding: 8px 14px;
+    border-radius: 8px;
+    color: #022F2F;
+    font-weight: 600;
+}
+
+/* Hover sair */
+nav ul li:last-child a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(45, 212, 191, 0.3);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/* Fundo geral */
+body {
+    background: linear-gradient(135deg, #022F2F, #014D4D, #0F766E);
+    min-height: 100vh;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Container geral */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Card estilo glass */
+.card {
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.08);
+    border-radius: 16px;
+    padding: 25px;
+    color: #E0F7F7;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* Hover elegante */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(45, 212, 191, 0.2);
+}
+
+/* Título pequeno */
+.card h6 {
+    font-size: 0.8rem;
+    color: #A7F3D0;
+    margin-bottom: 10px;
+}
+
+/* Valor */
+.card h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+/* Seção gráficos */
+.graficos {
+    margin: 20px 30px;
+    padding: 25px;
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #E0F7F7;
+}
+
+/* Título */
+.graficos h6 {
+    margin-bottom: 15px;
+    color: #A7F3D0;
+}
+
+/* Seção tabela */
+.tabela {
+    margin: 20px 30px 40px;
+    padding: 25px;
+    border-radius: 16px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    color: #E0F7F7;
+}
+
+/* Título */
+.tabela h6 {
+    margin-bottom: 15px;
+    color: #A7F3D0;
+}
+
+/* Tabela estilizada */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+/* Cabeçalho */
+thead {
+    background: rgba(45, 212, 191, 0.2);
+}
+
+thead th {
+    padding: 12px;
+    text-align: left;
+    font-size: 0.8rem;
+}
+
+/* Linhas */
+tbody td {
+    padding: 12px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Hover linha */
+tbody tr:hover {
+    background: rgba(255,255,255,0.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .cards {
+        padding: 20px;
+    }
+
+    .graficos, .tabela {
+        margin: 15px;
+        padding: 20px;
+    }
+}
