@@ -74,6 +74,14 @@ nav ul li:last-child a:hover {
     box-shadow: 0 6px 15px rgba(45, 212, 191, 0.3);
 }
 
+ .cor{
+color: white;
+}
+
+.cores{
+color: white;
+}
+
 /* Responsivo */
 @media (max-width: 768px) {
     header {

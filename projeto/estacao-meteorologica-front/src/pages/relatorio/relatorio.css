@@ -1,0 +1,136 @@
+/* Fonte */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+/* Fundo */
+body {
+  background: linear-gradient(135deg, #063c3c, #0d6f6f);
+  color: #fff;
+  min-height: 100vh;
+  padding: 30px;
+}
+
+/* Header */
+header {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 20px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header h2 {
+  font-weight: 600;
+}
+
+nav ul {
+  display: flex;
+  gap: 25px;
+  list-style: none;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d9fafa;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+/* Botão sair */
+nav button {
+  background: linear-gradient(135deg, #1cc5a3, #0ea5a5);
+  border: none;
+  padding: 8px 16px;
+  border-radius: 10px;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav button:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* Título */
+h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+p {
+  color: #cfeeee;
+  margin-bottom: 30px;
+}
+
+/* Tabela container */
+.tabela-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #fff;
+}
+
+/* Cabeçalho */
+thead {
+  background: rgba(0, 255, 200, 0.15);
+}
+
+th {
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+  color: #d9fafa;
+}
+
+/* Linhas */
+td {
+  padding: 15px;
+}
+
+tr {
+  transition: 0.3s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Hover nas linhas */
+tbody tr:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
