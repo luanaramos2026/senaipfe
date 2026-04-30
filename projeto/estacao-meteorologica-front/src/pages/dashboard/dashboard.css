@@ -52,8 +52,8 @@ body {
     padding: 25px;
     border-radius: 16px;
     backdrop-filter: blur(20px);
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    background: #fff;
+    border: 1px solid #fff;
     color: #E0F7F7;
 }
 
@@ -90,7 +90,7 @@ table {
 
 /* Cabeçalho */
 thead {
-    background: rgba(45, 212, 191, 0.2);
+    background: #fff;
 }
 
 thead th {
@@ -107,7 +107,26 @@ tbody td {
 
 /* Hover linha */
 tbody tr:hover {
-    background: rgba(255,255,255,0.05);
+    background: #fff;
+}
+
+.container-graficos {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+  flex-wrap: wrap; /* quebra no celular */
+}
+
+.grafico-box {
+  flex: 1;
+  min-width: 300px;
+  height: 350px;
+}
+
+/* faz o gráfico ocupar o espaço certo */
+.grafico-box canvas {
+  width: 100% !important;
+  height: 100% !important;
 }
 
 /* Responsivo */

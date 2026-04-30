@@ -1,5 +1,7 @@
 import Header from '../../components/header';
-import './dashboard.css'
+import GraficoBarra from '../../components/graficoBarra';
+import './dashboard.css';
+
 
 export default function Dashboard() {
     return(
@@ -24,12 +26,17 @@ export default function Dashboard() {
                 </div>
             </section>
 
-            <section className='graficos'>
-            <h6>Gráficos</h6>
-            <div>
-                {/* colocar gráficos */}
-            </div>
-            </section>
+            <div className="container-graficos">
+      
+      <div className="grafico-box">
+        <GraficoBarra />
+      </div>
+
+      <div className="grafico-box">
+        <GraficoBarra />
+      </div>
+
+    </div>
 
             <section className='tabela'>
                 <h6>Leituras Recentes</h6>

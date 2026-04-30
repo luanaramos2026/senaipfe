@@ -1,6 +1,6 @@
 import Header from '../../components/header'
 import './relatorio.css'
-
+import '../../components/graficoBarra'
 export default function Relatorio(){
     const leituras = [
         {horario: "12:00", qualidadeAr: "Boa", iqa: 42, temperatura:'26ºC', umidade: "68%"},
