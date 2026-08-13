@@ -1,0 +1,79 @@
+.categoryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.categoryCard {
+  background-color: var(--bg-card);
+  border-radius: var(--radius-md);
+  padding: 1.75rem;
+  box-shadow: var(--shadow-sm);
+  border: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition);
+  position: relative;
+}
+
+.categoryCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.featuredCard {
+  border: 2px solid var(--sesi-red);
+  background: linear-gradient(180deg, #FFFFFF 0%, #FFF5F5 100%);
+}
+
+.featuredCard::before {
+  content: 'SUB-ROTA ATIVA';
+  position: absolute;
+  top: -12px;
+  right: 20px;
+  background-color: var(--sesi-red);
+  color: #FFFFFF;
+  font-size: 0.68rem;
+  font-weight: 800;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-full);
+  letter-spacing: 0.08em;
+}
+
+.categoryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.categoryIcon {
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.categoryName {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--sesi-blue);
+  margin-bottom: 0.6rem;
+}
+
+.categoryDesc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.categoryFooter {
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .categoryGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,162 @@
+.footer {
+  background-color: var(--sesi-navy);
+  color: #94A3B8;
+  margin-top: auto;
+  border-top: 4px solid var(--sesi-red);
+}
+
+.footerContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 3.5rem 1.5rem 2.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 2.5rem;
+}
+
+.colBrand {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.footerLogo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.logoBadge {
+  background-color: var(--sesi-red);
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.2rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+.logoText {
+  font-family: var(--font-heading);
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: #FFFFFF;
+}
+
+.brandDesc {
+  font-size: 0.88rem;
+  line-height: 1.6;
+  color: #94A3B8;
+}
+
+.badgeLine {
+  margin-top: 0.5rem;
+}
+
+.pillBadge {
+  display: inline-block;
+  background-color: rgba(227, 6, 19, 0.15);
+  color: #FF525D;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.3rem 0.75rem;
+  border-radius: var(--radius-full);
+  border: 1px solid rgba(227, 6, 19, 0.3);
+}
+
+.colTitle {
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  margin-bottom: 1.2rem;
+  position: relative;
+}
+
+.colTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -0.4rem;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: var(--sesi-red);
+}
+
+.linkList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.linkList a {
+  font-size: 0.88rem;
+  color: #CBD5E1;
+  transition: var(--transition);
+}
+
+.linkList a:hover {
+  color: var(--sesi-red);
+  padding-left: 4px;
+}
+
+.colContact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contactItem {
+  font-size: 0.88rem;
+  color: #CBD5E1;
+  line-height: 1.5;
+}
+
+/* Bottom Bar */
+.bottomBar {
+  background-color: #050C1A;
+  padding: 1.2rem 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 0.82rem;
+}
+
+.bottomContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legalLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.legalLinks a:hover {
+  color: #FFFFFF;
+}
+
+@media (max-width: 900px) {
+  .footerContainer {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .footerContainer {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .bottomContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+}

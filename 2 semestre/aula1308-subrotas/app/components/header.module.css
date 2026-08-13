@@ -1,0 +1,251 @@
+.header {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.08);
+}
+
+/* Topbar Institucional */
+.topbar {
+  background-color: var(--sesi-navy);
+  color: #94A3B8;
+  font-size: 0.78rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.topbarContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.institutionalBadges {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sesiTag {
+  font-weight: 800;
+  color: #FFFFFF;
+  background-color: var(--sesi-red);
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+}
+
+.senaiTag {
+  font-weight: 800;
+  color: #FFFFFF;
+  background-color: #1E3A8A;
+  padding: 0.1rem 0.4rem;
+  border-radius: 3px;
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+}
+
+.divider {
+  color: #475569;
+}
+
+.subtext {
+  color: #CBD5E1;
+  font-size: 0.75rem;
+}
+
+.portalDate {
+  font-weight: 500;
+  color: #94A3B8;
+}
+
+/* Main Navbar */
+.mainNav {
+  background-color: #FFFFFF;
+  border-bottom: 3px solid var(--sesi-red);
+}
+
+.navContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0.85rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Brand logo */
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logoBadge {
+  background: linear-gradient(135deg, var(--sesi-red) 0%, var(--sesi-red-dark) 100%);
+  color: #FFFFFF;
+  font-family: var(--font-heading);
+  font-weight: 900;
+  font-size: 1.4rem;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  letter-spacing: 0.05em;
+  box-shadow: 0 4px 10px rgba(227, 6, 19, 0.3);
+}
+
+.brandTitleGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.brandTitle {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: var(--sesi-blue);
+  line-height: 1;
+  letter-spacing: 0.02em;
+}
+
+.brandSubtitle {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--sesi-red);
+  letter-spacing: 0.12em;
+  margin-top: 2px;
+}
+
+/* Nav list */
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  gap: 1rem;
+}
+
+.navItem {
+  position: relative;
+}
+
+.navLink {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-main);
+  border-radius: var(--radius-sm);
+  transition: var(--transition);
+}
+
+.navLink:hover {
+  color: var(--sesi-red);
+  background-color: rgba(227, 6, 19, 0.05);
+}
+
+.activeLink {
+  color: var(--sesi-red);
+  background-color: rgba(227, 6, 19, 0.08);
+  font-weight: 700;
+}
+
+.activeLink::after {
+  content: '';
+  position: absolute;
+  bottom: -0.85rem;
+  left: 1.1rem;
+  right: 1.1rem;
+  height: 3px;
+  background-color: var(--sesi-red);
+  border-radius: 2px 2px 0 0;
+}
+
+/* Mobile Toggle */
+.menuToggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: var(--sesi-blue);
+  position: relative;
+  transition: var(--transition);
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background-color: var(--sesi-blue);
+  transition: var(--transition);
+}
+
+.hamburger::before {
+  top: -7px;
+}
+
+.hamburger::after {
+  top: 7px;
+}
+
+/* Responsividade header */
+@media (max-width: 768px) {
+  .subtext, .portalDate {
+    display: none;
+  }
+  
+  .menuToggle {
+    display: block;
+  }
+  
+  .nav {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    border-bottom: 3px solid var(--sesi-red);
+    padding: 1rem 0;
+  }
+  
+  .navOpen {
+    display: flex;
+  }
+  
+  .navList {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+  
+  .navLink {
+    display: block;
+    width: 100%;
+    padding: 0.85rem 1.5rem;
+    border-radius: 0;
+  }
+  
+  .activeLink::after {
+    display: none;
+  }
+}
