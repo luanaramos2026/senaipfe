@@ -1,0 +1,90 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+  min-height: 100vh;
+}
+
+.container {
+  background: rgba(0,0,0,0.04);
+  border-radius: 12px;
+  padding: 1.5rem;
+  max-width: 520px;
+  width: 100%;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.06);
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.inputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.inputs label {
+  font-size: 0.85rem;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+.inputs input {
+  padding: 0.5rem 0.6rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.resultBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.resultLabel {
+  font-weight: 700;
+  color: #111;
+}
+
+.result {
+  background: white;
+  border: 1px solid #e5e7eb;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  font-size: 1.25rem;
+  text-align: center;
+  min-height: 2.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+}
+
+.buttons button {
+  padding: 0.6rem 0.75rem;
+  border: none;
+  border-radius: 8px;
+  background: #111827;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  opacity: 0.95;
+}
+
+@media (prefers-color-scheme: dark) {
+  .container { background: rgba(255,255,255,0.02); }
+  .inputs label { color: #ddd; }
+  .inputs input { background: #0b0b0b; border-color: #222; color: #eee; }
+  .result { background: #0b0b0b; border-color: #222; color: #eee; }
+  .buttons button { background: #2563eb; }
+}
