@@ -1,0 +1,88 @@
+.page {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #f4f6f9;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  min-height: calc(100vh - 78px);
+  padding: clamp(28px, 7vw, 72px) clamp(16px, 4vw, 40px) 90px;
+  background: linear-gradient(135deg, #f4f6f9 0%, #ffffff 60%, #eef1f5 100%);
+}
+
+.listPanel {
+  width: min(1120px, 100%);
+  height: fit-content;
+  padding: clamp(26px, 5vw, 54px);
+  background: #ffffff;
+  border-top: 5px solid #e30613;
+  box-shadow: 0 18px 44px rgba(23, 35, 63, 0.12), 0 2px 0 rgba(227, 6, 19, 0.08);
+}
+
+.listPanel h2 {
+  margin-bottom: 32px;
+  color: #17233f;
+  font-size: clamp(1.8rem, 4vw, 2.55rem);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.tableWrapper {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid #e1e5eb;
+}
+
+.table {
+  width: 100%;
+  min-width: 720px;
+  border-collapse: collapse;
+  color: #17233f;
+  background: #ffffff;
+  font-size: 0.95rem;
+  text-align: left;
+}
+
+.table th {
+  padding: 16px 18px;
+  color: #ffffff;
+  background: #17233f;
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.table td {
+  padding: 18px;
+  border-top: 1px solid #e8ebf0;
+  font-weight: 600;
+}
+
+.table tbody tr:hover {
+  background: #fff5f5;
+}
+
+@media (max-width: 560px) {
+  .main {
+    min-height: calc(100vh - 145px);
+    padding: 24px 12px 48px;
+  }
+
+  .listPanel {
+    border-top-width: 4px;
+  }
+
+  .listPanel h2 {
+    margin-bottom: 24px;
+  }
+
+  .table th,
+  .table td {
+    padding: 14px;
+  }
+}
