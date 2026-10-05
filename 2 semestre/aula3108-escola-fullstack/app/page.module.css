@@ -148,3 +148,21 @@ a.secondary {
   padding: 0.1em 0.4em;
   border-radius: 6px;
 }
+.searchBox {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.searchBox input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.searchBox input:focus {
+    border-color: #555;
+}
+

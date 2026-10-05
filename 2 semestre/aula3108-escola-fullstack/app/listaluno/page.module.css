@@ -86,3 +86,29 @@
     padding: 14px;
   }
 }
+.btnEditar {
+    background-color: #172344;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.btnEditar:hover {
+    background-color: #293c70;
+}
+
+.btnExcluir {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnExcluir:hover {
+    background-color: #b02a37;
+}
