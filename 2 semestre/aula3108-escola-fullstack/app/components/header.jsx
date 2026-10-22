@@ -13,7 +13,7 @@ export default function Header(){
                     <li><Link className={styles.navLink} href='/'>Início</Link></li>
                     <li><Link className={styles.navLink} href='/cadaluno'>Alunos - Cadastro</Link></li>
                     <li><Link className={styles.navLink} href='/listaluno'>Alunos - Lista</Link></li>
-                    <li><Link className={styles.navLink} href='/notaluno'>Alunos - Cadastro de Notas</Link></li>
+                    <li><Link className={styles.navLink} href='/cadnota'>Alunos - Cadastro de Notas</Link></li>
                     <li><Link className={styles.navLink} href='/listnota'>Alunos - Lista de Notas</Link></li>
                 </ul>
                 </nav>
@@ -21,4 +21,3 @@ export default function Header(){
         </header>
     )
 }
-

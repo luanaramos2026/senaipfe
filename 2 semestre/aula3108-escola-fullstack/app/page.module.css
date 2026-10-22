@@ -165,4 +165,98 @@ a.secondary {
 .searchBox input:focus {
     border-color: #555;
 }
+/* =========================================
+   CAMPO DE PESQUISA
+========================================= */
 
+.searchBox {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.searchBox input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.searchBox input:focus {
+    border-color: #17233f;
+}
+
+
+/* =========================================
+   FORMULÁRIO DE EDIÇÃO
+========================================= */
+
+.editBox {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+.editBox h3 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.editBox label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.editBox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BOTÕES DO FORMULÁRIO
+========================================= */
+
+.editButtons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btnSalvar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #198754;
+    color: white;
+    cursor: pointer;
+}
+
+.btnSalvar:hover {
+    opacity: 0.9;
+}
+
+.btnCancelar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6c757d;
+    color: white;
+    cursor: pointer;
+}
+
+.btnCancelar:hover {
+    opacity: 0.9;
+}
