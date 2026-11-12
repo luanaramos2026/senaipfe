@@ -9,10 +9,8 @@ export default function ListAluno() {
     const [alunos, setAlunos] = useState([]);
     const [carregando, setCarregando] = useState(true);
 
-    // Campo de pesquisa
     const [pesquisa, setPesquisa] = useState("");
 
-    // Buscar alunos no banco de dados
     async function listarAlunos() {
         try {
             const resposta = await fetch("/api/alunos");
@@ -36,11 +34,6 @@ export default function ListAluno() {
         listarAlunos();
     }, []);
 
-    // =====================================================
-    // PESQUISA
-    // A pesquisa só começa a partir do 3º caractere
-    // =====================================================
-
     const termoPesquisa = pesquisa.trim().toLowerCase();
 
     const alunosFiltrados =
@@ -57,9 +50,6 @@ export default function ListAluno() {
             )
             : alunos;
 
-    // =====================================================
-    // EXCLUIR ALUNO
-    // =====================================================
 
     async function excluirAluno(id) {
 
